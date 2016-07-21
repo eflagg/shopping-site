@@ -14,9 +14,9 @@
             <div class="well">
                 <h3>Price per melon</h3>
                 <p> {{ display_melon.price_str() }} </p>
-                <a class="btn btn-primary" href="/add_to_cart/{{ display_melon.id }}">
-                    Add to Cart
-                </a>
+                <form action = "/add_to_cart/{{ display_melon.id }}" method = "POST">
+                    <input type="submit" class="btn btn-primary" value="Add to cart"></input>
+                </form>
             </div>
         </div>
     </div>
