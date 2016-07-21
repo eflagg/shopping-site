@@ -88,12 +88,11 @@ def get_all():
     return melon_types.values()
 
 
-def get_by_id(id):
+def get_by_id(melon_id):
     """Return a melon, given its ID."""
 
     # This relies on access to the global dictionary `melon_types`
-
-    return melon_types[id]
+    return melon_types[melon_id]
 
 
 # Dictionary to hold types of melons.
